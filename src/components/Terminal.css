@@ -1,0 +1,55 @@
+.terminal {
+  height: 100%;
+  background-color: #1e1e1e;
+  border-top: 1px solid #3e3e42;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-header {
+  height: 30px;
+  background-color: #2d2d30;
+  border-bottom: 1px solid #3e3e42;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+
+.terminal-title span {
+  color: #cccccc;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.terminal-controls {
+  display: flex;
+  gap: 4px;
+}
+
+.terminal-control {
+  background: none;
+  border: none;
+  color: #cccccc;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.terminal-control:hover {
+  background-color: #37373d;
+}
+
+.terminal-control.close:hover {
+  background-color: #e74c3c;
+}
+
+.xterm-screen, .xterm-helper-textarea {
+    width: 100% !important;
+    height: auto !important;
+    overflow-y: scroll;
+}

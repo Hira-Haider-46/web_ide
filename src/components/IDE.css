@@ -1,0 +1,86 @@
+.ide {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1e1e;
+  color: #cccccc;
+}
+
+.ide-header {
+  height: 35px;
+  background-color: #2d2d30;
+  border-bottom: 1px solid #3e3e42;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.ide-tabs {
+  display: flex;
+  gap: 1px;
+}
+
+.tab {
+  background-color: #2d2d30;
+  border: none;
+  color: #cccccc;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+  font-size: 13px;
+  transition: background-color 0.2s;
+}
+
+.tab:hover {
+  background-color: #37373d;
+}
+
+.tab.active {
+  background-color: #1e1e1e;
+  border-bottom: 2px solid #007acc;
+}
+
+.ide-main {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.resize-handle {
+  background-color: #3e3e42;
+  transition: background-color 0.2s;
+}
+
+.resize-handle:hover {
+  background-color: #007acc;
+}
+
+.resize-handle[data-resize-handle-state="hover"] {
+  background-color: #007acc;
+}
+
+.resize-handle[data-resize-handle-state="drag"] {
+  background-color: #007acc;
+}
+
+.collapsed-terminal {
+  height: 30px;
+  background-color: #2d2d30;
+  border-top: 1px solid #3e3e42;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.terminal-toggle {
+  background: none;
+  border: none;
+  color: #cccccc;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.terminal-toggle:hover {
+  background-color: #37373d;
+}
